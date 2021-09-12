@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    tools:context="com.example.android.androidweatherapp.MainActivity">
+
+    <ImageView
+        android:id="@+id/cond1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/city"
+        app:srcCompat="@drawable/clear" />
+
+    <ImageView
+        android:id="@+id/hourcond1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/city"
+        app:srcCompat="@drawable/clear" />
+
+    <TextView
+        android:id="@+id/low3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="low3"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/low2"
+        app:layout_constraintTop_toTopOf="@+id/high3" />
+
+    <TextView
+        android:id="@+id/hourweather3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="weather3"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/hourweather2"
+        app:layout_constraintTop_toTopOf="@+id/hourcond3" />
+
+    <TextView
+        android:id="@+id/low1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="low1"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/high1"
+        app:layout_constraintTop_toTopOf="@+id/high1" />
+
+    <TextView
+        android:id="@+id/hourweather1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:text="weather1"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/hourtemp1"
+        app:layout_constraintTop_toTopOf="@+id/hourcond1" />
+
+    <TextView
+        android:id="@+id/high4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="high4"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/high3"
+        app:layout_constraintTop_toTopOf="@+id/day4" />
+
+    <TextView
+        android:id="@+id/hourtemp4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="temp4"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/hourtemp3"
+        app:layout_constraintTop_toTopOf="@+id/hourweather4" />
+
+    <ImageView
+        android:id="@+id/cond4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/cond3"
+        app:layout_constraintTop_toBottomOf="@+id/cond3"
+        app:srcCompat="@drawable/clear" />
+
+    <ImageView
+        android:id="@+id/hourcond4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/hourcond3"
+        app:layout_constraintTop_toBottomOf="@+id/hourcond3"
+        app:srcCompat="@drawable/clear" />
+
+    <TextView
+        android:id="@+id/day4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="day4"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/day3"
+        app:layout_constraintTop_toBottomOf="@+id/cond3" />
+
+    <TextView
+        android:id="@+id/hour4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hour4"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/hour3"
+        app:layout_constraintTop_toTopOf="@+id/hourtemp4" />
+
+    <TextView
+        android:id="@+id/day3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="day3"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/day2"
+        app:layout_constraintTop_toTopOf="@+id/cond3" />
+
+    <TextView
+        android:id="@+id/hour3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hour3"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/hour2"
+        app:layout_constraintTop_toTopOf="@+id/hourtemp3" />
+
+    <TextView
+        android:id="@+id/day2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="day2"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/day1"
+        app:layout_constraintTop_toTopOf="@+id/cond2" />
+
+    <TextView
+        android:id="@+id/hour2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hour2"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/hour1"
+        app:layout_constraintTop_toTopOf="@+id/hourtemp2" />
+
+    <ImageView
+        android:id="@+id/cond2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/cond1"
+        app:layout_constraintTop_toBottomOf="@+id/cond1"
+        app:srcCompat="@drawable/clear" />
+
+    <ImageView
+        android:id="@+id/hourcond2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/hourcond1"
+        app:layout_constraintTop_toBottomOf="@+id/hourcond1"
+        app:srcCompat="@drawable/clear" />
+
+    <TextView
+        android:id="@+id/high2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="high2"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/high1"
+        app:layout_constraintTop_toTopOf="@+id/day2" />
+
+    <TextView
+        android:id="@+id/hourtemp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="temp2"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/hourtemp1"
+        app:layout_constraintTop_toTopOf="@+id/hourweather2" />
+
+    <TextView
+        android:id="@+id/low2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="low2"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/low1"
+        app:layout_constraintTop_toTopOf="@+id/high2" />
+
+    <TextView
+        android:id="@+id/hourweather2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="weather2"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/hourweather1"
+        app:layout_constraintTop_toTopOf="@+id/hourcond2" />
+
+    <TextView
+        android:id="@+id/high1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:text="high1"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/day1"
+        app:layout_constraintTop_toTopOf="@+id/day1" />
+
+    <TextView
+        android:id="@+id/hourtemp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:text="temp1"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/hour1"
+        app:layout_constraintTop_toTopOf="@+id/hourweather1" />
+
+    <TextView
+        android:id="@+id/low4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="low4"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/low3"
+        app:layout_constraintTop_toTopOf="@+id/high4" />
+
+    <TextView
+        android:id="@+id/hourweather4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="weather4"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/hourweather3"
+        app:layout_constraintTop_toBottomOf="@+id/hourcond3" />
+
+    <TextView
+        android:id="@+id/day1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:text="day1"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cond1" />
+
+    <TextView
+        android:id="@+id/hour1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:text="hour1"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/hourtemp1" />
+
+    <ImageView
+        android:id="@+id/cond3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/cond2"
+        app:layout_constraintTop_toBottomOf="@+id/cond2"
+        app:srcCompat="@drawable/clear" />
+
+    <ImageView
+        android:id="@+id/hourcond3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/hourcond2"
+        app:layout_constraintTop_toBottomOf="@+id/hourcond2"
+        app:srcCompat="@drawable/clear" />
+
+    <TextView
+        android:id="@+id/high3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="high3"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/high2"
+        app:layout_constraintTop_toTopOf="@+id/day3" />
+
+    <TextView
+        android:id="@+id/hourtemp3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="temp3"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/hourtemp2"
+        app:layout_constraintTop_toTopOf="@+id/hourweather3" />
+
+    <TextView
+        android:id="@+id/windspeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Windspeed:"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/temp"
+        app:layout_constraintTop_toBottomOf="@+id/temp" />
+
+    <Button
+        android:id="@+id/go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="getWeather"
+        android:text="Get Weather"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inputLocation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Zipcode or City, State"
+        android:inputType="textPostalAddress"
+        android:focusableInTouchMode="true"
+        app:layout_constraintEnd_toStartOf="@+id/go"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="City"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputLocation" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/city"
+        app:layout_constraintTop_toBottomOf="@+id/city"
+        app:srcCompat="@drawable/clear" />
+
+    <TextView
+        android:id="@+id/weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Weather"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/icon"
+        app:layout_constraintTop_toTopOf="@+id/icon" />
+
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Temp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/icon"
+        app:layout_constraintTop_toBottomOf="@+id/icon" />
+
+    <TextView
+        android:id="@+id/humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Humidity:"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/windspeed"
+        app:layout_constraintTop_toBottomOf="@+id/windspeed" />
+
+    <WebView
+        android:id="@+id/radar"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="36dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/city" />
+
+    <Button
+        android:id="@+id/forecast"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:onClick="showForecast"
+        android:text="Forecast"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/satellite"
+        app:layout_constraintStart_toEndOf="@+id/hourly" />
+
+    <Button
+        android:id="@+id/hourly"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:onClick="showHourly"
+        android:text="Hourly"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/forecast"
+        app:layout_constraintStart_toEndOf="@+id/now" />
+
+    <Button
+        android:id="@+id/now"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:onClick="showCurrentConditions"
+        android:text="Now"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/hourly"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/satellite"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:onClick="showSatellite"
+        android:text="Satellite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/forecast" />
+
+
+</android.support.constraint.ConstraintLayout>
